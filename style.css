@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body {
+    background: linear-gradient(134.71deg, rgb(252, 63, 95) 0%,rgb(125, 97, 255) 100.346%);
+    font-family: 'Poppins', sans-serif;
+    padding: 95px;
+}
+.container {
+    border-radius: 32px;
+    box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180.00deg, rgba(43, 34, 21, 0.8) -1.22%,rgb(34, 40, 46) 101.326%);
+    max-width: 1410px;
+    width: 100%;
+    margin-inline: auto;
+}
+.header{
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.header-logo, .header-btn{
+    min-width: 175px;
+}
+.header-logo{
+
+}
+.header-logo__link{
+
+}
+.header-nav{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+
+}
+.header-nav__link{
+    color: rgb(160, 163, 167);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.header-btn{
+    display: flex;
+    justify-content: end;
+}
+.header-btn__link{
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 16px 24px;
+    border-radius: 999px;
+    box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08),inset 1px 1px 1px 0px rgba(135, 135, 135, 0.32);
+    background: linear-gradient(130.65deg, rgb(225, 225, 225) 8.621%,rgb(255, 255, 255) 99.93%);
+    color: rgb(36, 40, 46);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.main{
+    max-width: 598px;
+    margin-inline: auto;
+    text-align: center;
+    padding-top: 179px;
+    padding-bottom: 161px;
+
+}
+.title{
+    color: rgb(242, 244, 247);
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 32px;
+
+}
+.desc{
+    color: rgb(242, 244, 247);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+.btn-learn{
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid rgb(252, 64, 244);
+    color: rgb(252, 64, 244);
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 16px 32px;
+    min-width: 239px;
+}
+.loader{
+    margin-top: 64px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+
+}
