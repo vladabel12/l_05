@@ -6,6 +6,9 @@
 a{
     text-decoration: none;
 }
+html, .body{
+    min-height: 100%;
+}
 body {
     background: linear-gradient(134.71deg, rgb(252, 63, 95) 0%,rgb(125, 97, 255) 100.346%);
     font-family: 'Poppins', sans-serif;
@@ -49,9 +52,20 @@ body {
     letter-spacing: 0%;
     text-align: left;
 }
+.header-nav__link:hover {
+    color: white;
+    transition: .2s all ease-in-out;
+    transform: scale(1.1);
+}
 .header-btn{
     display: flex;
     justify-content: end;
+}
+.header-menu{
+    display: none;
+}
+.header-menu .material-symbols-outlined{
+    color: white;
 }
 .header-btn__link{
     display: inline-block;
@@ -68,6 +82,10 @@ body {
     line-height: 21px;
     letter-spacing: 0%;
     text-align: left;
+}
+.header-btn__link:hover {
+    transition: .2s all ease-in-out;
+    transform: translateY(-3px);
 }
 .main{
     max-width: 598px;
@@ -107,6 +125,10 @@ body {
     padding: 16px 32px;
     min-width: 239px;
 }
+.btn-learn:hover{
+    transition: .2s all ease-in-out;
+    transform: translateY(-3px);
+}
 .loader{
     margin-top: 64px;
     padding: 16px;
@@ -115,4 +137,67 @@ body {
     gap: 32px;
     justify-content: center;
 
+}
+#headerIcon{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    .header-logo{
+        display: none;
+    }
+    .main{
+        padding: 50px 20px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .desc{
+        margin-bottom: 40px;
+    }
+    .loader{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header-logo{
+        display: flex;
+    }
+    .header-nav{
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(0 0 0 / 90%);
+        flex-direction: column;
+        align-items: center;
+        transition: .2s all ease-in-out;
+        transform: translateX(-120%);
+    }
+    #headerIcon:checked ~ .header-nav {
+        transform: translateX(0%);
+    }
+    .header-btn{
+        display: flex;
+        transform: translateX(-120%);
+        transition: .35s all ease-in-out;
+        position: fixed;
+        bottom: 20px;
+        left: calc(50% - 15%);
+        transform: translate(-50%) scale(0);
+    }
+    #headerIcon:checked ~ .header-btn {
+        transform: translate(-50%) scale(1);
+    }
+    .header-nav__link{
+        color: white;
+    }
+    .header-menu{
+        display: flex;
+    }
+}
+@media screen and (max-width: 592px){
+    .body, .header{
+        padding: 20px;
+    }
 }
